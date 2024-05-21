@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalabe=no">
+
+  <link href="CSS/CSS_pendientes.css" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+	<title>Mis pendientes </title>
+</head>
+<body class="body">
+    <div class="encabezado">
+        <h2 class="tareastitulo">Mis tareas pendientes</h2>
+        <h5 class="fecha" id="fechas"></h5>
+    </div>
+
+    <section>
+        <form class="form">
+            <fieldset>
+                    <div class="campo">
+                        <input class="textofond" id="nuevaTarea" type="text" placeholder="Escribe aquí">
+                        <button class="boton" onclick="agregar()">+</button>
+                    </div>
+
+                    <h3 class="campo subtitulo">Por hacer</h3>
+
+                    <nav class="porhacer">
+                    <div class="tareas-pendientes"></div>                
+                    </nav>
+
+
+                    <h3 class="campo subtitulo">Terminado</h3>
+
+                    <nav class="terminado">
+                    <div class="tareas-terminadas"></div>
+                    </nav>
+
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
+
+<script type="text/javascript" src="funciones.js"></script>
+<script type="text/javascript">
+	//eventos del navegador
+	window.addEventListener('load', init);
+</script>
